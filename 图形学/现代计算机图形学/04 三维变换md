@@ -1,0 +1,23 @@
+三维变换
+
+- 缩放
+- 平移
+- 旋转
+
+
+
+任何关于刚体旋转的旋转矩阵是由三个基本旋转矩阵复合而成的，欧拉角就是下面三个角
+$$
+\mathbf{R}_{x y z}(\alpha, \beta, \gamma)=\mathbf{R}_{x}(\alpha) \mathbf{R}_{y}(\beta) \mathbf{R}_{z}(\gamma)
+$$
+
+
+绕任意轴旋转
+$$
+\mathbf{R}(\mathbf{n}, \alpha)=\cos (\alpha) \mathbf{I}+(1-\cos (\alpha)) \mathbf{n} \mathbf{n}^{T}+\sin (\alpha)\left(\begin{array}{ccc}
+0 & -n_{z} & n_{y} \\
+n_{z} & 0 & -n_{x} \\
+-n_{y} & n_{x} & 0
+\end{array}\right)
+$$
+
